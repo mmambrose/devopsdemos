@@ -9,14 +9,14 @@ https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-ap
 
 ### Steps
 #### Create namespace
-k create ns mysql-manifest
+`kubectl create ns mysql-manifest`
 
 #### Create the Persistent Volume and Claim
-k apply -f manifests/mysql-pvc.yml 
+`kubectl apply -f manifests/mysql-pvc.yml` 
 
 #### Create the MySQL Deployment
-k apply -f manifests/mysql-deployment.yml
+`kubectl apply -f manifests/mysql-deployment.yml`
 
-#### Get infomration about MySQL Deployment
+#### Get information about MySQL Deployment
 
-kubectl describe deployment mysql -n mysql-manifest
+`kubectl describe deployment mysql -n mysql-manifest`
