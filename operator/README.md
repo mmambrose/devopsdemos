@@ -34,3 +34,6 @@ Tiller is installed server side, Operator is packaged as Helm Chart
 
 #### Get information about the MySQL Cluster
 `kubectl describe mysqlclusters -n mysql-operator`
+
+#### Connect to MYSQL Cluster with mysql-client
+`kubectl -n mysql-operator run mysql-client --image=mysql:5.7 -it --rm --restart=Never -- mysql -h cluster-cr -uroot -pZgVyVdPe7vv0bUvV -e 'SELECT 1'`
