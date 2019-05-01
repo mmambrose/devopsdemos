@@ -1,0 +1,7 @@
+{
+"instanceId": "mysql-sc-'${RANDOM}'",
+"databaseVersion": "MYSQL_5_7",
+"settings": {
+  "tier": "db-n1-standard-1"
+  }
+}
